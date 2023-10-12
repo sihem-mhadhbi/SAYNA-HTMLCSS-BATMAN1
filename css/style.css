@@ -1,0 +1,85 @@
+.section1 {
+  text-align: center;
+}
+div.gallery {
+  margin: 5px;
+
+  width: 180px;
+}
+div.gallery img {
+  width: 100%;
+
+  height: auto;
+}
+li {
+  list-style: none;
+}
+body {
+  background-image: url("../assets/Illustrations-20231010T213724Z-001/Illustrations/Bathome1.png");
+}
+p,
+h1,
+h2,
+h3,
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: brown;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  border-bottom: 1px solid #fffefe;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+}
+.section1 {
+  margin-top: 100px;
+}
+.section1 p {
+  font-size: 20;
+  font-weight: 100;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+.buttons a {
+  background-color: rgb(191, 190, 190);
+  padding: 12px;
+}
+.logo img {
+  margin-top: 200px;
+}
+.section2 {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: black;
+  border: 1px solid gray;
+  padding: 100px;
+}
+.footer1 {
+  background-color: rgb(132, 169, 96);
+}
+.Citation {
+  display: flex;
+  background-color: black;
+  padding: 60px;
+  height: 600px;
+}
+.Citation p {
+  color: white;
+}
+.sidebar {
+  float: right;
+  margin: 20px;
+}
