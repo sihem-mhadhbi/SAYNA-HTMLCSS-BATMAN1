@@ -1,16 +1,17 @@
 .section1 {
   text-align: center;
 }
-div.gallery {
-  margin: 5px;
-
-  width: 180px;
+.gallery {
+  text-align: center; /* Pour centrer les éléments */
 }
-div.gallery img {
-  width: 100%;
+.gallery-item {
+  display: inline-block;
 
-  height: auto;
+  margin: 10px; /* Espace entre les éléments */
+  vertical-align: top; /* Alignement en haut des éléments */
+  text-align: left; /* Alignement du texte à gauche */
 }
+
 li {
   list-style: none;
 }
@@ -59,8 +60,6 @@ nav {
   margin-top: 200px;
 }
 .section2 {
-  margin-left: 200px;
-  margin-right: 200px;
   margin-top: 100px;
   margin-bottom: 100px;
   background-color: black;
