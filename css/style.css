@@ -1,21 +1,197 @@
-.section1 {
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"); */
+
+@font-face {
+  font-family: "rajdhani";
+  src: url("../police/Rajdhani-Medium.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Rajdhani";
+  font-size: 36px;
+  font-weight: 400;
+}
+button {
+  font-family: "Rajdhani";
+
+  font-size: 20px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Space Grotesk";
+  font-weight: 300;
+  opacity: 0.4;
+}
+:root {
+  --yellow-color: #ffff00;
+  --yellow-light: #f8f184;
+  --blue-color: #19587d;
+  --white-color: #ffffff;
+  --gradient-white: #eddebf89;
+  --gradient-Red: #89000977;
+  --black-color: #000000;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+ul {
+  list-style: none;
+}
+nav ul li a {
+  color: var(--white-color);
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "rajdhani";
+}
+nav ul li a:hover {
+  color: var(--yellow-color);
+}
+/* design de la partie entete hero */
+#hero {
+  background-image: url("../assets/Illustrations-20231010T213724Z-001/Illustrations/Bathome1.png");
+  height: 800px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #19587d;
+  background-size: cover;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+#hero .titre {
+  margin: 20px 0;
+}
+.btn {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 22px;
+
+  padding: 10px 50px;
+  background: linear-gradient(
+    80deg,
+    var(--gradient-white),
+    var(--gradient-Red)
+  );
+  box-shadow: var(--black-color) 15px 15px 40px;
+  margin-top: 10px;
+}
+.cta {
+  display: flex;
+}
+#hero .fleche {
+  display: block;
+  margin: 0 auto;
+  margin-top: 255px;
+}
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 80px;
+  top: 240px;
+}
+.scroll .social {
+  margin-top: 15px;
+}
+
+/* design de la partie batman personnage */
+#batman-cinema,
+#batman-justice-league {
+  margin-top: 40px;
+}
+.batman-personnage {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+#batman-cinema .titre,
+#batman-justice-league .titre,
+#neamsis .titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px 0;
+}
+#batman-cinema .description,
+#batman-justice-league .description,
+#neamsis .description {
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 80%;
+  font-size: 21px;
+}
+#batman-cinema .personnage-info {
+  text-align: center;
+}
+#neamsis .gallery {
+  display: flex;
+}
+/* Design de la partie multimedia */
+#multimedia button {
+  position: relative;
+  top: 155px;
+  background: none;
+}
+
+#multimedia .slider-multimedia {
+  display: flex;
+  width: 60%;
+  margin: 40px auto;
+}
+#multimedia .slider-image {
+  width: 100%;
+}
+#multimedia .slider-content {
+  padding: 15px;
+  background-color: #727272;
+}
+#multimedia p {
+  font-size: 14px;
+}
+
+/* 
+/* .section1 {
   text-align: center;
 }
 .gallery {
-  text-align: center; /* Pour centrer les éléments */
+  text-align: center; 
 }
 .gallery-item {
   display: inline-block;
 
-  margin: 10px; /* Espace entre les éléments */
-  vertical-align: top; /* Alignement en haut des éléments */
-  text-align: left; /* Alignement du texte à gauche */
+  margin: 10px; 
+  vertical-align: top;
+  text-align: left; 
 }
 
 li {
   list-style: none;
-}
-body {
+} */
+/* body {
   background-image: url("../assets/Illustrations-20231010T213724Z-001/Illustrations/Bathome1.png");
 }
 p,
@@ -27,9 +203,9 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: brown;
-}
-nav {
+  color: brown; */
+
+/* nav {
   display: flex;
   justify-content: space-between;
   margin-left: 30px;
@@ -38,15 +214,15 @@ nav {
   border-bottom: 1px solid #fffefe;
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
-}
-.section1 {
+} */
+/* .section1 {
   margin-top: 100px;
 }
 .section1 p {
   font-size: 20;
   font-weight: 100;
-}
-.buttons {
+} */
+/* .buttons {
   display: flex;
   justify-content: space-between;
   margin-left: 400px;
@@ -58,8 +234,8 @@ nav {
 }
 .logo img {
   margin-top: 200px;
-}
-.section2 {
+} */
+/* .section2 {
   margin-top: 100px;
   margin-bottom: 100px;
   background-color: black;
@@ -68,17 +244,21 @@ nav {
 }
 .footer1 {
   background-color: rgb(132, 169, 96);
-}
-.Citation {
-  display: flex;
+} */
+/* .Citation {
   background-color: black;
-  padding: 60px;
+  padding: 120px;
   height: 600px;
-}
-.Citation p {
+  margin: 20px;
+  margin-bottom: 120px;
+} */
+/* .Citation p {
   color: white;
 }
 .sidebar {
   float: right;
   margin: 20px;
 }
+.img2 {
+  float: right;
+} */
