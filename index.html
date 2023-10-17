@@ -8,11 +8,15 @@
    
   </head>
   <body>
+    <div class="up-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+
     <div class="section1">
     <header >
       <nav class="container">
         <a href="index.html"
-          ><img
+          ><img class="logo"
             src="./assets/Logos-20231010T213708Z-001/Logos/logohome.png"
             alt="logo"
         /></a>
@@ -165,6 +169,7 @@
  -->
 
  <section class="section2">
+  <div class="container">
   <h2>Alliés</h2>
   <p>Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce 
     avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le 
@@ -196,6 +201,7 @@
       </p>
     </div>
   </div>
+</div>
    
 </section>
  
@@ -231,7 +237,7 @@
       <section id="multimedia">
         <div class="container">
           <button class="left">
-            <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_flèche_2.png" alt="">
+            <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_flèche_1.png" alt="">
           </button>
           <button class="right">
             <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_flèche_2.png" alt="">
@@ -245,7 +251,7 @@
   <h2>ACTION, ADVENTURE</h2>
   <h3>Batman Begins 
   </h3>
-  <p>IMDB: <span>8.2</span>
+  <p>IMDB: <span class="yellow">8.2</span>
   </p>
   <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément 
     traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de 
@@ -263,95 +269,120 @@
       </section>
     </div>
       <!--Formulaire-->
-      <div class="footer1">
-      <div style="margin-left: 300px;margin-right: 300px;">
-        <h2 style="padding-top: 100px;">
-          PRENONS CONTACT
-        </h2>
-        <form action="">
-          <label for="email
-          ">ADRESSE EMAIL</label>
-          <input type="email" name="email" placeholder="Adresse email
-          ">
-          <br>
-          <label for="newsletter">NEWSLETTER
-          </label>
-          <br>
-          <label for=""> En cochant cette case vous acceptez de recevoir l’actualité concernant les 
-            aventures de Batman :</label>
-            <br>
+      <section id="contact">
+        <div class="form" >
+            <h2 >
+              PRENONS CONTACT
+            </h2>
+            <form action="">
+              <label class="titre" for="email
+              ">ADRESSE EMAIL</label>
+              <input type="email" name="email" placeholder="Mon email
+              ">
+              <label class="titre" for="newsletter">NEWSLETTER
+              </label>
+              <label class="titre" for=""> En cochant cette case vous acceptez de recevoir l’actualité concernant les 
+                aventures de Batman :</label>
+             
+              <input type="checkbox">
+          
+              <div>
+                <span> Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+             <span class="icon"><img src="./assets/Logos-20231010T213708Z-001/Logos/icon_flèche_2.png" alt=""></span>
+              </div>
+              <div >
+                <p class="news">Souhaitez vous recevoir des news 
+                </p>
+              </div>
+              <div class="btn-group">
+                <input type="radio"  id="film">
+                <label for="film">Des Films</label>
+                <input type="radio"  id="comics">
+                <label for="comics">Des Comics</label>
+                <input type="radio"  id="tout">
+                <label for="tout">De tout</label>
+              </div>
+            
+              <p class="titre">MESSAGE
+              </p>
+              <textarea  name="" id="" cols="30" rows="10" placeholder="Laissez un commentaire pour la communauté"></textarea>
+          <input type="submit" value="CONFIRMER" >
+            </form>
          
-          <input type="checkbox">
-          <br>
-          <div>
-            <span> Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
-         <span><img src="./assets/Logos-20231010T213708Z-001/Logos/icon_flèche_2.png" alt=""></span>
-          </div>
-          <div>
-            <p>Souhaitez vous recevoir des news 
-            </p>
-          </div>
-          <a href="#">Des films</a>
-          <a href="#">Des comics</a>
-          <a href="#">De tout</a>
-          <p>MESSAGE
-          </p>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Laissez un commentaire pour la communauté"></textarea>
-      <input type="submit" value="CONFIRMER" >
-        </form>
-      </div>
+
+      </section>
+      
       <!--Section Citation-->
-      <div class="Citation">
-      <section >
-        <div>
-          <div>
+      <section id="citation" >
+        <div class="container">
+          <div class="guillemet-open">
             <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_guillemets_1.png" alt="">
           </div>
-          <br/>
-<br/><br/>
-            <p> La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles</p>
-            <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
-            <br/>
-            
+          <div class="citation-carte">
+            <div>
+              <p class="citation-text"> La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles</p>
+
+            </div>
+            <div class="citation-auteur">
+              <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+
+            </div>
           </div>
-          <div class="img2">
-            <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_guillemets_2.png" alt="">
+          <div class="guillemet-close">    
+            <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_guillemets_2.png" alt="">       
           </div>
-          <br/>
-<br/><br/>
+       
+
+          </div>
+          
+        
+         
        
       </section>
+    </main>
+    <div class="clearfix">
+
+
+    </div>
      
     
-<footer class="gallery">
-    <div class="gallery-item">
-      <img src="/assets/Logos-20231010T213708Z-001/Logos/icon_WB.png" alt="">
-      <p> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & 
-        Snyder & Reeves</p>
+<footer>
+    <div class="container">
+      <div class="text-footer">
+        <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_WB.png" alt="">
+        Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & 
+          Snyder & Reeves
+      </div>
+     
     </div>
-    <div class="gallery-item">
-     <a href="#"><img src="./assets/Logos-20231010T213708Z-001/Logos/logo_sayna_white.png" alt="">
+   <div class="social-footer">
+    <a href="#" class="social-item">
+      <img src="./assets/Logos-20231010T213708Z-001/Logos/logo_sayna_white.png" alt="">
       <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_x.png" alt="">
       <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_DC.png" alt="">
 
     </a> 
 
  
-    <a href="">      <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_facebook.png" alt="">
+    <a href="" class="social-item">      <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_facebook.png" alt="">
     </a>
-       <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_ig.png" alt="">
+       <a href="" class="social-item"><img src="./assets/Logos-20231010T213708Z-001/Logos/icon_ig.png" alt="">
     </a>
-    <a href="">      <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_tw.png" alt="">
+    <a href="" class="social-item">      <img src="./assets/Logos-20231010T213708Z-001/Logos/icon_tw.png" alt="">
     </a>
+   </div>
   </div>
+  
+    
+
 
  
 
 </footer>
-</div>
 
-</div>
-    </main>
+
+
+ 
 
     
   </body>

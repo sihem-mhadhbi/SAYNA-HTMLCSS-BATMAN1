@@ -37,6 +37,15 @@ body {
   font-weight: 300;
   opacity: 0.4;
 }
+
+.up-bar {
+  border-top: 2px solid #727272;
+  position: relative;
+  top: 132px;
+  width: 85%;
+  left: 102px;
+}
+
 :root {
   --yellow-color: #ffff00;
   --yellow-light: #f8f184;
@@ -60,9 +69,16 @@ nav ul li a {
   font-size: 25px;
   font-weight: 500;
   font-family: "rajdhani";
+  text-decoration: none;
 }
 nav ul li a:hover {
   color: var(--yellow-color);
+}
+.logo:hover {
+  -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg)
+    brightness(109%) contrast(104%);
+  filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg)
+    brightness(109%) contrast(104%);
 }
 /* design de la partie entete hero */
 #hero {
@@ -130,8 +146,7 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 #batman-cinema .titre,
-#batman-justice-league .titre,
-#neamsis .titre {
+#batman-justice-league .titre {
   text-transform: uppercase;
   font-weight: bold;
   margin: 30px 0;
@@ -147,6 +162,18 @@ nav ul li a:hover {
 #batman-cinema .personnage-info {
   text-align: center;
 }
+
+.gallery {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+#neamsis .titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 30px 0;
+}
 #neamsis .gallery {
   display: flex;
 }
@@ -155,6 +182,14 @@ nav ul li a:hover {
   position: relative;
   top: 155px;
   background: none;
+  border: none;
+}
+#multimedia button.right {
+  right: -85%;
+}
+#multimedia .yellow {
+  color: yellow;
+  font-weight: bold;
 }
 
 #multimedia .slider-multimedia {
@@ -168,9 +203,161 @@ nav ul li a:hover {
 #multimedia .slider-content {
   padding: 15px;
   background-color: #727272;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 #multimedia p {
   font-size: 14px;
+}
+
+/* Design de la partie contact - formulaire */
+#contact {
+  background-color: darkslategray;
+  padding: 70px 0;
+}
+#contact .form {
+  width: 50%;
+  margin: 0 auto;
+}
+#contact h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+#contact .titre {
+  display: block;
+  margin: 28px 0;
+}
+#contact .form input[type="email"],
+textarea {
+  display: block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  border-bottom: 2px solid rgb(120, 120, 120);
+  background-color: transparent;
+  width: 80%;
+  padding: 10px 0;
+}
+#contact .icon img {
+  transform: rotate(90deg);
+  width: 20px;
+}
+#contact .news {
+  margin-top: 15px 0;
+
+  border-bottom: 2px solid rgb(120, 120, 120);
+}
+#contact {
+  background-color: darkslategray;
+  padding: 70px 0;
+}
+#contact .form {
+  width: 50%;
+  margin: 0 auto;
+}
+#contact h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+#contact .titre {
+  display: block;
+  margin: 28px 0;
+}
+#contact .form input[type="email"],
+textarea {
+  display: block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  border-bottom: 2px solid rgb(120, 120, 120);
+  background-color: transparent;
+  width: 80%;
+  padding: 10px 0;
+}
+#contact .icon img {
+  transform: rotate(90deg);
+  width: 20px;
+}
+#contact .news {
+  margin-top: 15px 0;
+
+  border-bottom: 2px solid rgb(120, 120, 120);
+}
+::-webkit-input-placeholder {
+  color: #f8f184;
+  font-size: 15px;
+}
+::-moz-placeholder {
+  color: #f8f184;
+  font-size: 15px;
+}
+:-ms-input-placeholder {
+  color: #f8f184;
+  font-size: 15px;
+}
+
+::placeholder {
+  color: #f8f184;
+  font-size: 15px;
+}
+.btn-group {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.form input[type="radio"] {
+  background-color: #000000;
+  opacity: 0;
+}
+.btn-group label {
+  cursor: pointer;
+  border: 2px solid;
+  padding: 10px;
+  border-image: linear-gradient(69deg, red, blue) 1;
+  -o-border-image: linear-gradient(69deg, red, blue) 1;
+  font-size: 20px;
+}
+input[type="submit"] {
+  display: block;
+  width: 230px;
+  margin: 25px auto;
+  padding: 15px 0;
+  cursor: pointer;
+}
+#citation {
+  margin: 90px;
+}
+#citation .citation-carte {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+#citation .citation-auteur {
+  font-size: 14px;
+  font-family: "radjhani";
+}
+#citation .guillemet-close {
+  float: right;
+}
+/* Design du footer */
+
+footer {
+  margin-top: 162px;
+}
+footer .text-footer {
+  text-align: center;
+  font-size: 14px;
+}
+footer .social-footer {
+  text-align: center;
+  margin: 50px;
+}
+footer .social-item {
+  padding: 15px;
 }
 
 /* 
@@ -180,6 +367,8 @@ nav ul li a:hover {
 .gallery {
   text-align: center; 
 }
+
+
 .gallery-item {
   display: inline-block;
 
